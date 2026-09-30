@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나를 소개합니다 | Profile</title>
+    <style>
+        /* 기본 초기화 및 폰트 설정 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 상단 소개 영역 (Navy Section) */
+        header {
+            background-color: #001f3f; /* 깊은 남색 */
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .header-emoji {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* 본문 영역 (Bright Section) */
+        main {
+            max-width: 600px;
+            margin: -30px auto 50px; 
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: #001f3f;
+            border-left: 4px solid #001f3f;
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .info-list {
+            list-style: none;
+        }
+        .info-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .info-list li::before {
+            content: '✨';
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .interest-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #e7eff9;
+            color: #001f3f;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .goal-box {
+            background-color: #f0f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            text-align: center;
+            color: #444;
+            border: 1px dashed #001f3f;
+        }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            main { margin: -20px 15px 30px; padding: 30px 20px; }
+            .section-title { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 소개 영역 -->
+    <header>
+        <span class="header-emoji">🎓</span>
+        <h1>[여기에 이름을 입력하세요]</h1>
+        <p>Narangoo Business School | 4th Year</p>
+    </header>
+
+    <!-- 본문 영역 -->
+    <main>
+        <!-- 관심 분야 -->
+        <div class="section">
+            <h2 class="section-title">관심 분야</h2>
+            <div class="interest-tags">
+                <span class="tag">비즈니스 전략</span>
+                <span class="tag">마케팅 분석</span>
+                <span class="tag">창업 및 경영</span>
+            </div>
+        </div>
+
+        <!-- 좋아하는 것 -->
+        <div class="section">
+            <h2 class="section-title">좋아하는 것</h2>
+            <ul class="info-list">
+                <li>새로운 비즈니스 모델 탐구</li>
+                <li>데이터 기반의 의사결정</li>
+                <li>글로벌 트렌드 읽기</li>
+            </ul>
+        </div>
+
+        <!-- 목표 -->
+        <div class="section">
+            <h2 class="section-title">나의 목표</h2>
+            <div class="goal-box">
+                "비즈니스 인사이트를 바탕으로 세상에 가치를 더하는 전문가가 되는 것"
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
